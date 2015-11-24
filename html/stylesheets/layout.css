@@ -776,10 +776,10 @@ button.btn-organizations:active {
 	    font-style: normal; }
 */
 
-textarea[name=message] {
+.textarea[name=message] {
     background: white !important;
 }
 
-input[name=_replyto] {
+.input[name=_replyto] {
     background: white !important;
 }
