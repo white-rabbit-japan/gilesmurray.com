@@ -545,31 +545,7 @@
     });
 
     $('#form').validationEngine();
-    $('#form').submit(function() {
-      if ($('#form').validationEngine('validate')) {
-        $.post('process.php', $('#form').serialize(), function(data) {
-          if (data == 'sent') {
-            $('div.form_result_msg').text("Thank you for your enquiry.");
-            $('div.form_result_msg').addClass('green');
-            $('div.form_result_msg').removeClass('red_label');
-            $('div.form_result_msg').show();
-            $('.reset-button').trigger('click');
-          }
-          else {
-            //$('div.form_result_msg').text("There was an error with your submission. Please try again.");
-            $('div.form_result_msg').text(data);
-            $('div.form_result_msg').removeClass('green');
-            //$('div.form_result_msg').css('color', 'red');
-            $('div.form_result_msg').addClass('red_label');
-            $('div.form_result_msg').show();
-          }
-          //alert(res);
-          console.log('|' + data + '|');
-        });
-      }
-      return false;
-    });
-
+   
   });
 
 </script>
