@@ -399,7 +399,7 @@
 
     <div class="fourteen columns offset-by-one">
 
-      <form name="apply-form" data-netlify="true">
+      <form name="apply-form" data-netlify="true" netlify-honeypot="gender">
         <label>
           Name:
         </label>
@@ -422,8 +422,8 @@
         </label>
         <textarea cols="30" rows="8" name="cf_field_5" id="cf_field_5" class="area fldrequired"></textarea>
 
-        <label class="code-label">
-          Enter Code*:
+        <label style="display:none">
+          Gender: <input class="textfield" name="gender" id="gender" type="text">
         </label>
 
         <button class="btn-submit" type="submit">Submit the Form</button>
